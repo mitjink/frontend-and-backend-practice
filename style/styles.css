@@ -9,6 +9,7 @@ body {
 
 /* ==== КОНТЕЙНЕР СТРАНИЦЫ ==== */
 .page-container {
+    background: rgba(255, 255, 255, 0.95);
     max-width: 1200px;
     margin: 0 auto;
     background: white;
