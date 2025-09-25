@@ -3,7 +3,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #51d1f1 0%, #44baff 100%);
+    background: linear-gradient(135deg, #74b9ff 0%, #0984e3 100%);
     min-height: 100vh;
 }
 
@@ -18,7 +18,7 @@ body {
 
 /* ==== ШАПКА ==== */
 .header {
-    background: linear-gradient(135deg, #1261b0 0%, #0864bf 100%);
+    background: linear-gradient(135deg, #2d3436 0%, #636e72 100%);
     color: white;
     text-align: center;
     padding: 30px;
@@ -86,7 +86,7 @@ body {
     border-radius: 15px;
     object-fit: cover;
     margin: 20px auto;
-    border: 4px solid #667eea;
+    border: 4px solid #74b9ff;
     box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
 }
 
@@ -123,7 +123,7 @@ body {
 }
 
 .skill-tag {
-    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    background: linear-gradient(135deg, #a29bfe 0%, #6c5ce7 100%);
     color: white;
     padding: 12px 25px;
     border-radius: 25px;
@@ -180,7 +180,7 @@ body {
 
 /* ==== ФУТЕР ==== */
 .footer {
-    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    background: linear-gradient(135deg, #2d3436 0%, #636e72 100%);
     color: white;
     text-align: center;
     padding: 30px;
