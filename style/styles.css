@@ -18,7 +18,7 @@ body {
 
 /* ==== ШАПКА ==== */
 .header {
-    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    background: linear-gradient(135deg, #1261b0 0%, #0864bf 100%);
     color: white;
     text-align: center;
     padding: 30px;
@@ -29,7 +29,7 @@ body {
 
 /* ==== НАВИГАЦИЯ ==== */
 .nav {
-    background: #2c3e50;
+    background: #1261b0;
     padding: 20px 0;
 }
 
