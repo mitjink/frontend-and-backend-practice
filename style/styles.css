@@ -18,7 +18,7 @@ body {
 
 /* ==== ШАПКА ==== */
 .header {
-    background: linear-gradient(135deg, #2d3436 0%, #636e72 100%);
+    background: linear-gradient(135deg, #4a6572 0%, #344955 100%);
     color: white;
     text-align: center;
     padding: 30px;
@@ -180,7 +180,7 @@ body {
 
 /* ==== ФУТЕР ==== */
 .footer {
-    background: linear-gradient(135deg, #2d3436 0%, #636e72 100%);
+    background: linear-gradient(135deg, #4a6572 0%, #344955 100%);
     color: white;
     text-align: center;
     padding: 30px;
