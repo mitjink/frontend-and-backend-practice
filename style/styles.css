@@ -3,7 +3,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #74b9ff 50%, #030405 100%);
+    background: linear-gradient(#74b9ff 50%, #0f7eec 100%);
     min-height: 100vh;
 }
 
@@ -138,7 +138,7 @@ body {
     box-shadow: 0 6px 20px rgba(79, 172, 254, 0.4);
 }
 
-/* ==== ОПЫТ РАБОТЫ ==== */
+/* ==== ОПЫТ ==== */
 .experience-section {
     margin-top: 50px;
 }
