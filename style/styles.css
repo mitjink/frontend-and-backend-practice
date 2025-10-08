@@ -381,6 +381,15 @@ main.content {
     padding: 30px;
     border-left: 4px solid #74b9ff;
     background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    margin: 20px 0;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.practice-article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
 }
 
 .practice-title {
@@ -390,42 +399,12 @@ main.content {
     font-weight: 600;
 }
 
-.practice-description {
+.practice-article p {
     color: #495057;
     line-height: 1.7;
     font-size: 16px;
     margin: 0;
-    padding: 20px;
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-    border-radius: 10px;
-    border-left: 4px solid #74b9ff;
-    transition: all 0.3s ease;
-}
-
-.practice-description:hover {
-    background: linear-gradient(135deg, #e9ecef 0%, #dee2e6 100%);
-}
-
-.section-title {
-    font-size: 32px;
-    color: #2c3e50;
-    text-align: center;
-    margin-bottom: 40px;
-    font-weight: 300;
-    position: relative;
-    padding-bottom: 15px;
-}
-
-.section-title::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 3px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    border-radius: 2px;
+    padding: 0;
 }
 
 /* ==== АДАПТИВНОСТЬ ==== */
