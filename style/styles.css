@@ -6,6 +6,11 @@ body {
     background: linear-gradient(#74b9ff 50%, #0f7eec 100%);
     min-height: 100vh;
 }
+.content-section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 
 /* ==== КОНТЕЙНЕР СТРАНИЦЫ ==== */
 .page-container {
@@ -319,30 +324,101 @@ main.content {
 }
 
 /* ===== НОВОСТИ ===== */
-.news-container {
-    display: grid;
-    gap: 25px;
-}
-.news-card {
+.news-article {
     background: white;
     padding: 30px;
+    margin: 25px 0;
     border-radius: 15px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.08);
     border-left: 4px solid #667eea;
+    transition: transform 0.3s ease;
 }
+
+.news-article:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.news-header {
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #f8f9fa;
+}
+
 .news-title {
     font-size: 24px;
     color: #2c3e50;
     margin: 0 0 10px 0;
     font-weight: 600;
 }
+
 .news-meta {
     color: #95a5a6;
     font-size: 14px;
-    margin: 0 0 15px 0;
+    margin: 0;
+    line-height: 1.5;
 }
-.news-text {
+
+.news-content {
     color: #34495e;
     line-height: 1.7;
+    font-size: 16px;
     margin: 0;
+}
+
+/* ==== СТИЛИ ДЛЯ ПРАКТИК ==== */
+
+.practice-article {
+    background: white;
+    padding: 30px;
+    margin: 25px 0;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    border-left: 4px solid #74b9ff;
+    transition: transform 0.3s ease;
+}
+
+.practice-article:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+}
+
+.practice-title {
+    font-size: 22px;
+    color: #2c3e50;
+    margin: 0 0 15px 0;
+    font-weight: 600;
+}
+
+.practice-description {
+    color: #34495e;
+    line-height: 1.7;
+    font-size: 16px;
+    margin: 0;
+    padding: 15px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    border-radius: 8px;
+    border-left: 3px solid #74b9ff;
+}
+
+/* ==== АДАПТИВНОСТЬ ==== */
+@media (max-width: 768px) {
+    .news-article,
+    .practice-article,
+    .contact-info-card {
+        padding: 20px;
+        margin: 15px 0;
+    }
+    
+    .news-title {
+        font-size: 20px;
+    }
+    
+    .practice-title {
+        font-size: 20px;
+    }
+    
+    .contact-info-item {
+        font-size: 16px;
+    }
 }
