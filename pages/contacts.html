@@ -206,7 +206,7 @@
                     <form id="feedbackForm" method="dialog">
                         <div class="form-group">
                             <label for="name">Имя <span class="required">*</span></label>
-                            <input type="text" id="name" name="name" required placeholder="Как к Вам обращаться">
+                            <input type="text" id="name" name="name" required placeholder="Как к Вам можно обращаться">
                         </div>
 
                         <div class="form-group">
@@ -239,7 +239,7 @@
 
                         <div class="modal-actions">
                             <!-- Кнопка отмены с автоматическим закрытием через form method="dialog" -->
-                            <button type="submit" class="btn btn-secondary">Отмена</button>
+                            <button type="button" class="btn btn-secondary" onclick="contactModal.close()">Отмена</button>
                             <!-- Кнопка отправки с обработкой через JavaScript -->
                             <button type="button" class="btn btn-primary" onclick="submitForm()">Отправить</button>
                         </div>
