@@ -19,11 +19,12 @@
     --space-xl: 40px;
 
     /* Тени */
+    --shadow: 0 2px 5px rgba(0,0,0,0.1);
     --shadow-light: 0 5px 20px rgba(0,0,0,0.08);
     --shadow-medium: 0 8px 25px rgba(0,0,0,0.15);
-    --shadow-heavy: 0 0 30px rgba(0,0,0,0.1);
 
     /* Радиусы */
+    --radius: 8px;
     --radius-sm: 8px;
     --radius-md: 12px;
     --radius-lg: 15px;
@@ -32,41 +33,48 @@
     /* Шрифты */
     --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --font-size-base: 16px;
-    --font-size-sm: 14px; /* ДОБАВЛЕНО: отсутствовал sm размер */
     --font-size-lg: 18px;
     --font-size-xl: 20px;
     --font-size-xxl: 24px;
     --font-size-xxxl: 28px;
-    --font-size-giant: 32px;
 
     /* Анимации */
     --transition: all 0.3s ease;
 }
 
 /* ==== БАЗОВЫЕ СТИЛИ ==== */
-body {
-    font-family: var(--font-family);
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    line-height: 1.6;
+    color: var(--color-text);
     background: linear-gradient(var(--color-secondary) 50%, #0f7eec 100%);
     min-height: 100vh;
 }
 
 /* ==== КОНТЕЙНЕР СТРАНИЦЫ ==== */
-.page { /* ИСПРАВЛЕНО: было .page-container */
+.page {
     max-width: 1200px;
     margin: 0 auto;
     background: var(--color-white);
     min-height: 100vh;
-    box-shadow: var(--shadow-heavy);
+    box-shadow: var(--shadow-medium);
 }
 
 /* ==== ШАПКА ==== */
 .header {
     background: linear-gradient(135deg, #4a6572 0%, var(--color-dark) 100%);
     color: var(--color-white);
-    text-align: center;
     padding: var(--space-lg);
+    text-align: center;
+}
+
+.header_title {
     font-size: var(--font-size-xxxl);
     font-weight: 300;
     letter-spacing: 2px;
@@ -75,27 +83,23 @@ body {
 /* ==== НАВИГАЦИЯ ==== */
 .nav {
     background: #1261b0;
-    padding: var(--space-md) 0;
 }
 
-.nav_list { /* ИСПРАВЛЕНО: было .nav__list */
+.nav_list {
     list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
-    gap: var(--space-xl);
 }
 
-.nav_item { /* ИСПРАВЛЕНО: было .nav__item */
+.nav_item {
     margin: 0;
 }
 
-.nav_link { /* ИСПРАВЛЕНО: было .nav__link */
+.nav_link {
+    display: block;
+    padding: var(--space-md);
     color: var(--color-white);
     text-decoration: none;
-    padding: var(--space-sm) var(--space-xl);
-    border-radius: var(--radius-xl);
     transition: var(--transition);
     font-weight: 500;
 }
@@ -103,12 +107,11 @@ body {
 /* Состояния навигации */
 .nav_link:hover {
     background: rgba(255,255,255,0.1);
-    transform: translateY(-2px);
 }
 
 .nav_link:focus {
     outline: 2px solid var(--color-white);
-    outline-offset: 2px;
+    outline-offset: -2px;
 }
 
 /* Модификатор активного пункта */
@@ -118,13 +121,11 @@ body {
 }
 
 /* ==== ОСНОВНОЙ КОНТЕНТ ==== */
-.main { /* ИСПРАВЛЕНО: было main.content */
-    padding: var(--space-xl);
-    max-width: 900px;
-    margin: 0 auto;
+.main {
+    padding: var(--space-lg);
 }
 
-/* Блок profile */
+/* ==== ПРОФИЛЬ ==== */
 .profile {
     margin-bottom: var(--space-lg);
 }
@@ -144,6 +145,7 @@ body {
     height: 150px;
     border-radius: 50%;
     border: 3px solid var(--color-accent);
+    object-fit: cover;
 }
 
 .profile_name {
@@ -157,7 +159,7 @@ body {
     font-size: 1.1rem;
 }
 
-/* Блок about */
+/* ==== ОБО МНЕ ==== */
 .about {
     background: var(--color-white);
     padding: var(--space-lg);
@@ -176,7 +178,7 @@ body {
     line-height: 1.6;
 }
 
-/* Блок skills */
+/* ==== НАВЫКИ ==== */
 .skills {
     margin-bottom: var(--space-lg);
 }
@@ -200,6 +202,7 @@ body {
     color: var(--color-white);
     font-weight: bold;
     transition: transform 0.3s;
+    cursor: pointer;
 }
 
 .skill:hover {
@@ -219,7 +222,11 @@ body {
     color: var(--color-text);
 }
 
-/* Блок projects */
+.skill_name {
+    display: block;
+}
+
+/* ==== ПРОЕКТЫ ==== */
 .projects_title {
     color: var(--color-main);
     margin-bottom: var(--space-md);
@@ -240,6 +247,7 @@ body {
     box-shadow: var(--shadow);
     border-left: 4px solid var(--color-accent);
     transition: transform 0.3s;
+    cursor: pointer;
 }
 
 .project-card:hover {
@@ -255,7 +263,7 @@ body {
     color: #666;
 }
 
-/* Блок footer */
+/* ==== ФУТЕР ==== */
 .footer {
     background: var(--color-main);
     color: var(--color-white);
@@ -264,19 +272,21 @@ body {
     margin-top: var(--space-lg);
 }
 
-/* Адаптивность */
+/* ==== АДАПТИВНОСТЬ ==== */
 @media (max-width: 768px) {
     .profile_card {
         flex-direction: column;
         text-align: center;
     }
+    
     .nav_list {
         flex-direction: column;
-        gap: var(--space-sm);
     }
+    
     .skills_list {
         justify-content: center;
     }
+    
     .projects_grid {
         grid-template-columns: 1fr;
     }
