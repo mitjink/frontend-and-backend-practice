@@ -7,50 +7,77 @@
     <link rel="stylesheet" href="../style/styles.css">
 </head>
 <body>
-    <div class="page">
-        <header class="header-title">
-            <h1>Новости</h1>
-        </header>
+<!-- ОСНОВНОЙ КОНТЕЙНЕР -->
+<div class="page">
 
-        <nav class="nav">
-            <ul class="nav-list">
-                <li class="nav-item"><a class="nav-link" href="../index.html">Главная</a></li>
-                <li class="nav-item"><a class="nav-link" href="news.html">Новости</a></li>
-                <li class="nav-item"><a class="nav-link" href="practices.html">Практики</a></li>
-                <li class="nav-item"><a class="nav-link" href="goods.html">Товары</a></li>
-                <li class="nav-item"><a class="nav-link" href="contacts.html">Контакты</a></li>
-            </ul>
-        </nav>
+    <!-- Шапка -->
+    <header class="header">
+        <h1 class="header_title">Моё портфолио</h1>
+    </header>
 
-        <main class="main">
-            <h2 class="page-title">Новости</h2>
+    <!-- Навигация -->
+    <nav class="nav">
+        <ul class="nav_list">
+            <li class="nav_item">
+                <a class="nav_link" href="../index.html">Главная</a>
+            </li>
+            <li class="nav_item nav_item--active">
+                <a class="nav_link" href="news.html">Новости</a>
+            </li>
+            <li class="nav_item">
+                <a class="nav_link" href="contacts.html">Контакты</a>
+            </li>
+            <li class="nav_item">
+                <a class="nav_link" href="products.html">Товары</a>
+            </li>
+            <li class="nav_item">
+                <a class="nav_link" href="practices.html">Практики</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- ОСНОВНОЙ КОНТЕНТ -->
+    <main class="main">
+        <h2 class="page-title">Новости</h2>
         
-            <article class="news-article">
+        <!-- Новость 1 -->
+        <article class="news-article">
+            <div class="news-header">
                 <h3 class="news-title">Новость 1</h3>
-                <div class="news-content">
-                    <p>Пока ничего не произошло.</p>
-                </div>
-            </article>
+                <div class="news-meta">Опубликовано: 23 октября 2025</div>
+            </div>
+            <div class="news-content">
+                <p>Пока ничего не произошло.</p>
+            </div>
+        </article>
 
-            <article class="news-article">
+        <!-- Новость 2 -->
+        <article class="news-article">
+            <div class="news-header">
                 <h3 class="news-title">Новость 2</h3>
-                <div class="news-content">
-                    <p>Все без изменений.</p>
-                </div>
-            </article>
+                <div class="news-meta">Опубликовано: 22 октября 2025</div>
+            </div>
+            <div class="news-content">
+                <p>Все без изменений.</p>
+            </div>
+        </article>
 
-            <article class="news-article">
+        <!-- Новость 3 -->
+        <article class="news-article">
+            <div class="news-header">
                 <h3 class="news-title">Новость 3</h3>
-                <div class="news-content">
-                    <p>Все осталось как есть.</p>
-                </div>
-            </article>
-        </main>
-           
+                <div class="news-meta">Опубликовано: 21 октября 2025</div>
+            </div>
+            <div class="news-content">
+                <p>Все осталось как есть.</p>
+            </div>
+        </article>
+    </main>
 
-        <footer class="footer">
-            <p>2025 Мой сайт</p>
-        </footer>
-    </div>
+    <!-- Подвал -->
+    <footer class="footer">
+        <p class="footer_text">&copy; 2025 Мой сайт</p>
+    </footer>
+</div>
 </body>
 </html>
