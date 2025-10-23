@@ -212,16 +212,15 @@ body {
 }
 
 .skill--html {
-    background: #e34c26;
+    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
 }
 
 .skill--css {
-    background: #264de4;
+    background: linear-gradient(135deg, var(--color-purple) 0%, var(--color-purple-dark) 100%);
 }
 
 .skill--js {
-    background: #f0db4f;
-    color: var(--color-text);
+    background: linear-gradient(135deg, var(--color-accent) 0%, #2980b9 100%);
 }
 
 .skill_name {
