@@ -342,6 +342,8 @@ body {
     cursor: pointer;
     transition: var(--transition);
     font-weight: 500;
+    font-size: 18px;
+    padding: 15px 30px;
 }
 
 .contact-button:hover {
