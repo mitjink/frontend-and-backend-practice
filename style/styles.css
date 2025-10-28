@@ -495,6 +495,22 @@ body {
     margin: 0;
 }
 
+#contactModal {
+    position: fixed !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+    margin: 0 !important;
+}
+
+dialog[open] {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
+
 .modal-header {
     background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
     color: white;
