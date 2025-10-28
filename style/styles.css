@@ -1,6 +1,5 @@
-/* ==== CSS ПЕРЕМЕННЫЕ ==== */
 :root {
-    /* Цветовая палитра */
+    /* цветовая палитра */
     --color-main: #2c3e50;
     --color-accent: #3498db;
     --color-secondary: #74b9ff;
@@ -12,25 +11,25 @@
     --color-purple: #667eea;
     --color-purple-dark: #764ba2;
 
-    /* Размеры и отступы */
+    /* размеры и отступы */
     --space-sm: 10px;
     --space-md: 20px;
     --space-lg: 30px;
     --space-xl: 40px;
 
-    /* Тени */
+    /* тени */
     --shadow: 0 2px 5px rgba(0,0,0,0.1);
     --shadow-light: 0 5px 20px rgba(0,0,0,0.08);
     --shadow-medium: 0 8px 25px rgba(0,0,0,0.15);
 
-    /* Радиусы */
+    /* радиусы */
     --radius: 8px;
     --radius-sm: 8px;
     --radius-md: 12px;
     --radius-lg: 15px;
     --radius-xl: 25px;
 
-    /* Шрифты */
+    /* шрифты */
     --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     --font-size-base: 16px;
     --font-size-lg: 18px;
@@ -38,11 +37,11 @@
     --font-size-xxl: 24px;
     --font-size-xxxl: 28px;
 
-    /* Анимации */
+    /* анимации */
     --transition: all 0.3s ease;
 }
 
-/* ==== БАЗОВЫЕ СТИЛИ ==== */
+/* базовые стили */
 * {
     margin: 0;
     padding: 0;
@@ -57,7 +56,7 @@ body {
     min-height: 100vh;
 }
 
-/* ==== КОНТЕЙНЕР СТРАНИЦЫ ==== */
+/* контейнер страницы */
 .page {
     max-width: 1200px;
     margin: 0 auto;
@@ -66,7 +65,7 @@ body {
     box-shadow: var(--shadow-medium);
 }
 
-/* ==== ШАПКА ==== */
+/* шапка */
 .header {
     background: linear-gradient(135deg, #4a6572 0%, var(--color-dark) 100%);
     color: var(--color-white);
@@ -80,7 +79,7 @@ body {
     letter-spacing: 2px;
 }
 
-/* ==== НАВИГАЦИЯ ==== */
+/* навигация */
 .nav {
     background: #1261b0;
 }
@@ -104,7 +103,7 @@ body {
     font-weight: 500;
 }
 
-/* Состояния навигации */
+/* состояния навигации */
 .nav_link:hover {
     background: rgba(255,255,255,0.1);
 }
@@ -114,20 +113,20 @@ body {
     outline-offset: -2px;
 }
 
-/* Модификатор активного пункта */
+/* активный пункт */
 .nav_item--active .nav_link {
     background: rgba(255,255,255,0.2);
     font-weight: bold;
 }
 
-/* ==== ОСНОВНОЙ КОНТЕНТ ==== */
+/* основной контент */
 .main {
     padding: var(--space-xl);
     max-width: 900px;
     margin: 0 auto;
 }
 
-/* ==== ПРОФИЛЬ ==== */
+/* профиль */
 .profile {
     margin-bottom: var(--space-lg);
 }
@@ -161,7 +160,7 @@ body {
     font-size: 1.1rem;
 }
 
-/* ==== ОБО МНЕ ==== */
+/* обо мне */
 .about {
     background: var(--color-white);
     padding: var(--space-lg);
@@ -180,7 +179,7 @@ body {
     line-height: 1.6;
 }
 
-/* ==== НАВЫКИ ==== */
+/* навыки */
 .skills {
     margin-bottom: var(--space-lg);
 }
@@ -197,7 +196,7 @@ body {
     flex-wrap: wrap;
 }
 
-/* Блок skill с модификаторами */
+/* блок навыков с модификаторами */
 .skill {
     padding: var(--space-md);
     border-radius: var(--radius);
@@ -223,7 +222,7 @@ body {
     background: linear-gradient(135deg, #f39c12 0%, #e67e22 100%);
 }
 
-/* ==== ПРОЕКТЫ ==== */
+/* проекты */
 .projects_title {
     color: var(--color-main);
     margin-bottom: var(--space-md);
@@ -236,7 +235,7 @@ body {
     gap: var(--space-md);
 }
 
-/* Блок project-card */
+/* блок project-card проектов */
 .project-card {
     background: var(--color-white);
     padding: var(--space-lg);
@@ -260,7 +259,7 @@ body {
     color: #666;
 }
 
-/* ==== ФУТЕР ==== */
+/* футер */
 .footer {
     background: var(--color-main);
     color: var(--color-white);
@@ -269,9 +268,7 @@ body {
     margin-top: var(--space-lg);
 }
 
-/* ==== ДОПОЛНИТЕЛЬНЫЕ СТИЛИ ДЛЯ ДРУГИХ СТРАНИЦ ==== */
-
-/* Стили для страницы новостей */
+/* стили для страницы новостей */
 .news-article {
     background: var(--color-white);
     padding: var(--space-lg);
@@ -292,7 +289,7 @@ body {
     color: var(--color-text);
 }
 
-/* Стили для страницы контактов */
+/* стили для страницы контактов */
 .contact-info-card {
     background: var(--color-white);
     padding: var(--space-lg);
@@ -326,7 +323,7 @@ body {
     transform: translateY(-2px);
 }
 
-/* Стили для страницы товаров */
+/* стили для страницы товаров */
 .products-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -369,7 +366,7 @@ body {
     font-size: 1.1rem;
 }
 
-/* Стили для страницы практик */
+/* стили для страницы практик */
 .practice-article {
     background: var(--color-white);
     padding: var(--space-lg);
@@ -390,7 +387,7 @@ body {
     color: var(--color-text);
 }
 
-/* Общие стили для заголовков страниц */
+/* стили для заголовков страниц */
 .page-title {
     color: var(--color-main);
     text-align: center;

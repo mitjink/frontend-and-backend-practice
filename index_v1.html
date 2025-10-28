@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная - Портфолио</title>
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+<body>
+<!-- ОСНОВНОЙ КОНТЕЙНЕР -->
+<div class="page">
+
+    <!-- Шапка -->
+    <header class="header">
+        <h1 class="header_title">Моё портфолио</h1>
+        <button class="theme-toggle" id="themeToggle">
+            <span class="theme-icon">🌙</span>
+        </button>
+    </header>
+
+    <!-- Навигация -->
+    <nav class="nav">
+        <ul class="nav_list">
+            <li class="nav_item nav_item--active">
+                <a class="nav_link" href="index.html">Главная</a>
+            </li>
+            <li class="nav_item">
+                <a class="nav_link" href="pages/news.html">Новости</a>
+            </li>
+            <li class="nav_item">
+                <a class="nav_link" href="pages/practices.html">Практики</a>
+            </li>
+            <li class="nav_item">
+                <a class="nav_link" href="pages/goods.html">Товары</a>
+            </li>
+            <li class="nav_item">
+                <a class="nav_link" href="pages/contacts.html">Контакты</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- ОСНОВНОЙ КОНТЕНТ -->
+    <main class="main">
+
+        <!-- Профиль -->
+        <section class="profile">
+            <div class="profile_card">
+                <img class="profile_photo" src="images/photo.png" alt="Фото профиля">
+                <div class="profile_info">
+                    <h2 class="profile_name">Доськова Мария Павловна</h2>
+                    <p class="profile_group">ЭФБО-03-24</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Обо мне -->
+        <section class="about">
+            <h2 class="about_title">Обо мне</h2>
+            <div class="about_content">
+                <p class="about_text">
+                    Студентка РТУ МИРЭА. Изучаю HTML, CSS и JavaScript.
+                </p>
+            </div>
+        </section>
+
+        <!-- Навыки -->
+        <section class="skills">
+            <h2 class="skills_title">Мои навыки</h2>
+            <div class="skills_list">
+                <div class="skill skill--html">
+                    <span class="skill_name">HTML</span>
+                </div>
+                <div class="skill skill--css">
+                    <span class="skill_name">CSS</span>
+                </div>
+                <div class="skill skill--js">
+                    <span class="skill_name">JavaScript</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Проекты -->
+        <section class="projects">
+            <h2 class="projects_title">Проекты</h2>
+            <div class="projects_grid">
+                <div class="project-card">
+                    <h3 class="project-card_title">Личный сайт</h3>
+                    <p class="project-card_desc">Сайт-портфолио на HTML и CSS</p>
+                </div>
+                <div class="project-card">
+                    <h3 class="project-card_title">Приложение для изучения иностранных слов</h3>
+                    <p class="project-card_desc">Простое приложение, помогающее в освоении языка</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <p class="footer_text">&copy; 2025 Мой сайт</p>
+    </footer>
+</div>
+</body>
+</html>

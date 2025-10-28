@@ -1,11 +1,12 @@
 function initTheme() {
     const themeToggle = document.getElementById('themeToggle');
     
-    if (!themeToggle) return; 
-    const themeIcon = themeToggle.querySelector('.theme-icon');
+    if (!themeToggle) return;
+    
+    const themeIcon = themeToggle.querySelector('i');
 
     function updateIcon(theme) {
-        themeIcon.textContent = theme === 'light' ? '🌙' : '☀️';
+        themeIcon.className = theme === 'light' ? 'bi bi-moon' : 'bi bi-sun';
     }
 
     const savedTheme = localStorage.getItem('theme') || 'light';
