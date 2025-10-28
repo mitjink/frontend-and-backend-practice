@@ -679,6 +679,37 @@ dialog[open] {
     color: var(--color-gray);
 }
 
+[data-theme="dark"] .header_title {
+    color: var(--color-text);
+}
+
+/* Навигация */
+[data-theme="dark"] .nav {
+    background: #1a4d7a;
+}
+
+[data-theme="dark"] .nav_link {
+    color: var(--color-text);
+}
+
+[data-theme="dark"] .nav_link:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+[data-theme="dark"] .nav_item--active .nav_link {
+    background: rgba(255, 255, 255, 0.25);
+}
+
+/* Футер */
+[data-theme="dark"] .footer {
+    background: var(--color-dark);
+    color: var(--color-text);
+}
+
+[data-theme="dark"] .footer_text {
+    color: var(--color-text);
+}
+
 @media (max-width: 768px) {
     .profile_card {
         flex-direction: column;
