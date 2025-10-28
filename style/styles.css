@@ -501,6 +501,13 @@ body {
     left: 50% !important;
     transform: translate(-50%, -50%) !important;
     margin: 0 !important;
+    border: none; 
+    border-radius: 16px;
+    padding: 0; 
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); 
+    max-width: 600px;
+    width: 95vw;
+    overflow: hidden;
 }
 
 dialog[open] {
@@ -515,7 +522,6 @@ dialog[open] {
     background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
     color: white;
     padding: 1.5rem;
-    border-radius: 12px 12px 0 0;
     margin: 0;
 }
 
