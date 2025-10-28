@@ -269,26 +269,6 @@ body {
     margin-top: var(--space-lg);
 }
 
-/* ==== АДАПТИВНОСТЬ ==== */
-@media (max-width: 768px) {
-    .profile_card {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .nav_list {
-        flex-direction: column;
-    }
-    
-    .skills_list {
-        justify-content: center;
-    }
-    
-    .projects_grid {
-        grid-template-columns: 1fr;
-    }
-}
-
 /* ==== ДОПОЛНИТЕЛЬНЫЕ СТИЛИ ДЛЯ ДРУГИХ СТРАНИЦ ==== */
 
 /* Стили для страницы новостей */
@@ -627,22 +607,6 @@ dialog[open] {
     }
 }
 
-/* Адаптивность для модального окна */
-@media (max-width: 600px) {
-    .modal {
-        margin: 1rem;
-        width: calc(100vw - 2rem);
-    }
-
-    .modal-actions {
-        flex-direction: column;
-    }
-
-    .btn {
-        width: 100%;
-    }
-}
-
 .theme-toggle {
     position: absolute;
     top: var(--space-lg);
@@ -663,4 +627,88 @@ dialog[open] {
 .theme-toggle:hover {
     background: rgba(255, 255, 255, 0.3);
     transform: scale(1.1);
+}
+
+/* темная тема */
+[data-theme="dark"] {
+    --color-white: #2c3e50;
+    --color-text: #ecf0f1;
+    --color-light: #34495e;
+    --color-main: #ecf0f1;
+    --color-dark: #1a252f;
+    --color-gray: #bdc3c7;
+    
+    background: linear-gradient(var(--color-dark) 50%, #0a1a2d 100%);
+}
+
+[data-theme="dark"] .page {
+    background: var(--color-dark);
+}
+
+[data-theme="dark"] .header {
+    background: linear-gradient(135deg, #2c3e50 0%, #1a252f 100%);
+}
+
+[data-theme="dark"] .profile_card,
+[data-theme="dark"] .about,
+[data-theme="dark"] .project-card,
+[data-theme="dark"] .news-article,
+[data-theme="dark"] .contact-info-card,
+[data-theme="dark"] .product-card,
+[data-theme="dark"] .practice-article {
+    background: var(--color-light);
+    color: var(--color-text);
+}
+
+[data-theme="dark"] .profile_name,
+[data-theme="dark"] .about_title,
+[data-theme="dark"] .skills_title,
+[data-theme="dark"] .projects_title,
+[data-theme="dark"] .page-title,
+[data-theme="dark"] .news-title,
+[data-theme="dark"] .practice-title,
+[data-theme="dark"] .product-name {
+    color: var(--color-text);
+}
+
+[data-theme="dark"] .about_text,
+[data-theme="dark"] .project-card_desc,
+[data-theme="dark"] .news-content,
+[data-theme="dark"] .practice-content,
+[data-theme="dark"] .product-price {
+    color: var(--color-gray);
+}
+
+@media (max-width: 768px) {
+    .profile_card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .nav_list {
+        flex-direction: column;
+    }
+    
+    .skills_list {
+        justify-content: center;
+    }
+    
+    .projects_grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .modal {
+        margin: 1rem;
+        width: calc(100vw - 2rem);
+    }
+
+    .modal-actions {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+    }
 }
