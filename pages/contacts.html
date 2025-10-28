@@ -140,6 +140,19 @@
 
             form.reset();
         }
+        
+        document.querySelector('.contact-button').addEventListener('click', function() 
+        {
+            const modal = document.getElementById('contactModal');
+            modal.showModal();
+    
+            modal.style.position = 'fixed';
+            modal.style.top = '50%';
+            modal.style.left = '50%';
+            modal.style.transform = 'translate(-50%, -50%)';
+            modal.style.margin = '0';
+        });
+
 
         document.getElementById('contactModal').addEventListener('click', function(event) {
             if (event.target === this) {
