@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Новости - Портфолио</title>
     <link rel="stylesheet" href="../style/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
 </head>
 <body>
 <!-- ОСНОВНОЙ КОНТЕЙНЕР -->
@@ -19,24 +21,41 @@
     </header>
 
     <!-- Навигация -->
-    <nav class="nav">
-        <ul class="nav_list">
-            <li class="nav_item">
-                <a class="nav_link" href="../index.html">Главная</a>
-            </li>
-            <li class="nav_item nav_item--active">
-                <a class="nav_link" href="news.html">Новости</a>
-            </li>
-            <li class="nav_item">
-                <a class="nav_link" href="practices.html">Практики</a>
-            </li>
-            <li class="nav_item">
-                <a class="nav_link" href="goods.html">Товары</a>
-            </li>
-            <li class="nav_item">
-                <a class="nav_link" href="contacts.html">Контакты</a>
-            </li>
-        </ul>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">
+                            <i class="bi bi-house me-1"></i>Главная
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="news.html">
+                            <i class="bi bi-newspaper me-1"></i>Новости
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="practices.html">
+                            <i class="bi bi-code-slash me-1"></i>Практики
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="goods.html">
+                            <i class="bi bi-cart me-1"></i>Товары
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacts.html">
+                            <i class="bi bi-telephone me-1"></i>Контакты
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
     <!-- ОСНОВНОЙ КОНТЕНТ -->
@@ -83,5 +102,6 @@
     </footer>
 </div>
 <script src="../script/theme.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
