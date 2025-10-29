@@ -4,92 +4,144 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Практики - Портфолио</title>
-    <link rel="stylesheet" href="../style/styles.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../style/styles.css">
 </head>
-<body>
-<!-- ОСНОВНОЙ КОНТЕЙНЕР -->
-<div class="page">
-
-    <!-- Шапка -->
-    <header class="header">
-        <h1 class="header_title">Моё портфолио</h1>
-        <button class="theme-toggle" id="themeToggle">
-            <span class="theme-icon">🌙</span>
-        </button>
-    </header>
-
-    <!-- Навигация -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="../index.html">
-                            <i class="bi bi-house me-1"></i>Главная
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="news.html">
-                            <i class="bi bi-newspaper me-1"></i>Новости
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="practices.html">
-                            <i class="bi bi-code-slash me-1"></i>Практики
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="goods.html">
-                            <i class="bi bi-cart me-1"></i>Товары
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contacts.html">
-                            <i class="bi bi-telephone me-1"></i>Контакты
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- ОСНОВНОЙ КОНТЕНТ -->
-    <main class="main">
-        <h2 class="page-title">Практики</h2>
-
-        <article class="practice-article">
-            <h3 class="practice-title">Практика 1</h3>
-            <div class="practice-content">
-                <p>Изучение основ работы с Git.</p>
-            </div>
-        </article>
+<body class="bg-light">
+    <div class="container-fluid p-0">
         
-        <article class="practice-article">
-            <h3 class="practice-title">Практика 2</h3>
-            <div class="practice-content">
-                <p>Изучение основ HTML и CSS.</p>
+        <!-- хэдер -->
+        <header class="bg-primary text-white py-4">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col">
+                        <h1 class="h3 mb-1">Моё Портфолио</h1>
+                        <p class="mb-0 opacity-75">Практические работы</p>
+                    </div>
+                    <div class="col-auto">
+                        <button class="btn btn-outline-light btn-sm" id="themeToggle">
+                            <i class="bi bi-moon"></i>
+                        </button>
+                    </div>
+                </div>
             </div>
-        </article>
-        
-        <article class="practice-article">
-            <h3 class="practice-title">Практика 3</h3>
-            <div class="practice-content">
-                <p>Разработка модальных окон.</p>
-            </div>
-        </article>
-    </main>
+        </header>
 
-    <!-- Подвал -->
-    <footer class="footer">
-        <p class="footer_text">&copy; 2025 Мой сайт</p>
-    </footer>
-</div>
-<script src="../script/theme.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- навигация -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">
+                                <i class="bi bi-house me-1"></i>Главная
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="news.html">
+                                <i class="bi bi-newspaper me-1"></i>Новости
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="practices.html">
+                                <i class="bi bi-code-slash me-1"></i>Практики
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="goods.html">
+                                <i class="bi bi-cart me-1"></i>Товары
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacts.html">
+                                <i class="bi bi-telephone me-1"></i>Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <main class="container my-4">
+            <section class="mb-5">
+                <div class="card shadow-sm w-auto d-inline-block">
+                    <div class="card-header bg-light">
+                        <h3 class="card-title h5 mb-0">
+                            <i class="bi bi-code-slash text-primary me-2"></i>
+                            Практики
+                        </h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text text-muted mb-0">
+                            Мои учебные проекты и практические задания
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- практики -->
+            <div class="row g-4">
+                <div class="col-12">
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-light">
+                            <h4 class="card-title h6 mb-0">
+                                <i class="bi bi-git text-primary me-2"></i>Практика 1
+                            </h4>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Изучение основ работы с Git.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-light">
+                            <h4 class="card-title h6 mb-0">
+                                <i class="bi bi-filetype-html text-primary me-2"></i>Практика 2
+                            </h4>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Изучение основ HTML и CSS.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12">
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-light">
+                            <h4 class="card-title h6 mb-0">
+                                <i class="bi bi-window-stack text-primary me-2"></i>Практика 3
+                            </h4>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Разработка модальных окон.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- футер -->
+        <footer class="bg-dark text-white py-4 mt-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="mb-0">&copy; 2025 Мой сайт. Все права защищены.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <a href="contacts.html" class="text-white text-decoration-none me-3">Контакты</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../script/theme.js"></script>
 </body>
 </html>
