@@ -116,7 +116,7 @@
                             </h4>
                         </div>
                         <div class="card-body">
-                            <button class="btn btn-primary w-100" onclick="contactModal.showModal()">
+                            <button class="btn btn-primary w-100" onclick="openContactModal()">
                                 <i class="bi bi-pencil me-1"></i>Связаться с нами
                             </button>
                         </div>
@@ -141,7 +141,6 @@
 
         <!-- модальное окно -->
         <dialog id="contactModal">
-            <dialog id="contactModal">
         <div class="modal-header">
             <h2>Форма обратной связи</h2>
         </div>
@@ -208,8 +207,6 @@
                 category: formData.get('category'),
                 message: formData.get('message')
             }
-
-            console.log('Данные формы:', data);
 
             alert('Спасибо! Ваше обращение отправлено. Мы свяжемся с вами в ближайшее время.');
 
